@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window AlerToh | Exercise #1</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="showTyphoonWarning()">
+
+    <div class="overlay"></div>
+
+    <!-- Content initially hidden -->
+    <div id="content">
+        <div class="container">
+            <div class="alert-box">
+                ⚠️ URGENT: SUPER TYPHOON ENTENG IS APPROACHING!
+            </div>
+
+            <h2>🌪️ Critical Weather Alert - Calabarzon</h2>
+            <p>The "super typhoon Enteng" is rapidly intensifying and expected to make landfall in "Calabarzon". Prepare for extreme weather conditions, including "strong winds, torrential rain, and potential flooding".</p>
+
+            <!-- Weather Information Table -->
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Wind Speed (km/h)</th>
+                    <th>Rainfall</th>
+                </tr>
+                <tr>
+                    <td>Severe Tropical Storm</td>
+                    <td>95 - 120</td>
+                    <td>Heavy</td>
+                </tr>
+                <tr>
+                    <td>Typhoon</td>
+                    <td>120 - 170</td>
+                    <td>Very Heavy</td>
+                </tr>
+                <tr>
+                    <td>Super Typhoon</td>
+                    <td>170+</td>
+                    <td>Extreme</td>
+                </tr>
+            </table>
+
+            <!-- Emergency Button -->
+            <button class="warning-btn" onclick="showEmergencyAlert()">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOZ7UryqGIkLWHWJ70GZSQGgyuD99zpBE6Ew&s" alt="Warning Icon">
+                Emergency Guidelines
+            </button>
+
+            <p class="footer">📢 Stay updated with official reports. Follow safety protocols and evacuate if necessary.</p>
+        </div>
+
+        <img src="https://www.guycarp.com/insights/2024/09/Typhoon-Yagi-09-2024/_jcr_content/root/container/container/image_774295086.coreimg.png/1726996214334/figure1-tctrk-jt-wp-2024-12.png" alt="Typhoon Image" class="typhoon-image">
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
